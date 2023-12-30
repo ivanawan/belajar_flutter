@@ -57,7 +57,6 @@ initState(){
                 padding: const EdgeInsets.fromLTRB(10, 10, 10, 5),
                 child: TextFormField(
                   controller: title,
-                  obscureText: true,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'title',
