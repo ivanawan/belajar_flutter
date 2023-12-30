@@ -47,7 +47,7 @@ initState(){
       //   icon:Icon(Icons.arrow_back)
       //   ),
       ),
-      body: Card(
+      body:SingleChildScrollView( 
         child: Form(
           key:_formKey,
           child:  Column(
@@ -77,6 +77,7 @@ initState(){
             Padding(
               padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
               child: ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.blueAccent),
                 child: (widget.note == null)
                     ? const Text(
                         'Add',
@@ -95,7 +96,7 @@ initState(){
             ],
           ),
           )
-         ),
+          )
    );
   }
   
